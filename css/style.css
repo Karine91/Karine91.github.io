@@ -770,7 +770,7 @@ h1, h2, h3, h4, h5, h6 {
 .tf_thumbs {
   position: absolute !important;
   z-index: 12;
-  right: 220px;
+  right: 50px;
   width: auto;
   top: 50%;
   margin-top: -79px;
