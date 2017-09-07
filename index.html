@@ -14,11 +14,13 @@
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Underdog&amp;amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <!--build:css css/vendor.css-->
+    <link href="css/fontello.css" rel="stylesheet">
+    <!--[if IE 7]link(rel="stylesheet" href="css/fontello-ie7.css")//[endif]-->
+    <!--build:css css/vendor.css--><link rel="stylesheet" href="css/idangerous.chopslider-3.4.css"/>
+    <link href="css/fractionslider.css" rel="stylesheet">
+    <link href="css/fotorama.css" rel="stylesheet">
     <!--bower:css-->
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
-    <link rel="stylesheet" href="bower_components/tooltipster/dist/css/tooltipster.bundle.css" />
-    <link rel="stylesheet" href="bower_components/pannellum/css/pannellum.css" />
     <!--endbower-->
     <!--endbuild-->
     <!--build:css css/style.css-->
@@ -26,45 +28,608 @@
     <!--endbuild-->
   </head>
   <body>
-    <header>
-      <div id="player1" class="player"></div>
-      <div class="header_wrapper">
-        <div class="container">
-          <nav class="header-navigation_panel">
-            <div class="header_logo"><a href="#" class="header_logo__link"><span class="header_logo__link-blue">Океан</span>ариум</a></div>
-            <ul class="header_menu">
-              <li class="header_menu__item"><a href="#" class="header_menu-link">Blog</a></li>
-              <li class="header_menu__item"><a href="#" class="header_menu-link">News</a></li>
-              <li class="header_menu__item"><a href="#" class="header_menu-link">Gallery</a></li>
-              <li class="header_menu__item"><a href="#" class="header_menu-link">Price</a></li>
-              <li class="header_menu__item"><a href="#" class="header_menu-link">Services</a></li>
-              <li class="header_menu__item active"><a href="#" class="header_menu-link">Shedule</a></li>
-              <li class="header_menu__item"><a href="#" class="header_menu-link">Contacts</a></li>
-            </ul>
-          </nav>
+    <div class="main">
+      <header class="section-page"><a href="#" class="cs3-slide-next"><i class="icon-right-dir"></i></a><a href="#" class="cs3-slide-prev"><i class="icon-left-dir"></i></a>
+        <div class="cs3 slider_block">
+          <div class="cs3-slide slider_block__item"><img src="img/slider/slide1.jpg" width="100%" alt="photo #1" class="slider_image"></div>
+          <div class="cs3-slide slider_block__item"><img src="img/slider/slide2.jpg" width="100%" alt="photo #2" class="slider_image"></div>
+          <div class="cs3-slide slider_block__item"><img src="img/slider/slide3.jpg" width="100%" alt="photo #3" class="slider_image"></div>
+          <div class="cs3-captions">
+            <div class="cs3-caption">
+              <div class="slider_block__maintext">
+                <h1 class="slider_block__heading">oceanarium</h1>
+                <h2 class="slider_block__subheading">on the golden beach</h2>
+              </div>
+              <p class="slider_block__text_bottom">
+                We are an oceanarium on the Golden Beach. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="cs3-caption">Thailand, There are very many different ATM 2 in one place</div>
+            <div class="cs3-caption">Thailand, There are very many different ATM 3 in one place</div>
+          </div>
+          <!--.slider_block__item(style="background-image: url(img/slider/slide1.jpg)" data-in="fade")-->
+          <!--    .slider_block__maintext(data-in="top" data-delay="200" data-out="top" data-step="1" data-time="2250")-->
+          <!--        h1.slider_block__heading oceanarium-->
+          <!--        h2.slider_block__subheading on the golden beach-->
+          <!---->
+          <!--    .slider_block__text.slider_block__text_bottom(data-in="bottom" data-delay="200" data-out="top" data-step="2" data-time="5250").-->
+          <!--        We are an oceanarium on the Golden Beach. Lorem ipsum dolor sit amet, consectetur-->
+          <!--        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
+          <!--        Ut enim ad minim veniam, quis nostrud exercitation-->
+          <!--        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit-->
+          <!--        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.-->
+          <!--        Excepteur sint occaecat cupidatat non proident, sunt in culpa-->
+          <!--        qui officia deserunt mollit anim id est laborum.-->
+          <!--    .slider_block__image.slider_block__image_fish(data-special="cycle" data-delay="200" data-in="right" data-step="3" data-time="6000"): img(src="img/slider/fish_many.png")-->
+          <!--.slider_block__item(style="background-image: url(img/slider/slide2.jpg)" data-in="fade")-->
+          <!--    .slider_block__text_item(data-in="right" data-step="1") Text1-->
+          <!--    .slider_block__text_item(data-in="right" data-step="2") Text2-->
+          <!--    .slider_block__text_item(data-in="right" data-step="3") Text3-->
+          <!--    .slider_block__text_item(data-in="right" data-step="4") Text4-->
+          <!--.slider_block__item(style="background-image: url(img/slider/slide3.jpg)" data-in="fade")-->
+          <!--    .slider_block__image.slider_block__image_fish1-slide3(data-delay="2000" data-in="right" data-out="none" data-step="1" data-time="4500"): img(src="img/slider/fish2.png")-->
+          <!--    .slider_block__image.slider_block__image_fish2-slide3(data-delay="2000" data-in="bottomLeft" data-out="none" data-step="2" data-time="4500"): img(src="img/slider/fish3.png")-->
+          <!--    .slider_block__image.slider_block__image_fish3-slide3(data-delay="2500" data-in="topLeft" data-out="none" data-step="2" data-time="8500"): img(src="img/slider/fish4.png")-->
+          <div class="fs_loader"></div>
         </div>
-      </div>
-    </header>
-    <footer>
-      <ul class="footer_menu">
-        <li class="footer_menu__item"><a href="#" class="footer_menu-link">Blog</a></li>
-        <li class="footer_menu__item"><a href="#" class="footer_menu-link">News</a></li>
-        <li class="footer_menu__item"><a href="#" class="footer_menu-link">Contacts</a></li>
-      </ul>
-    </footer>
-    <!--build:js scripts/vendor.js-->
+        <div class="header_wrapper">
+          <div class="container">
+            <nav class="header-navigation_panel">
+              <div class="header_logo"><a href="#" class="header_logo__link"><span class="header_logo__link-blue">Океан</span>ариум</a></div>
+                    <ul class="header_menu">
+                      <li class="header_menu__item"><a href="#" class="header_menu__link">Blog</a></li>
+                      <li class="header_menu__item"><a href="#" class="header_menu__link">News</a></li>
+                      <li class="header_menu__item"><a href="#" class="header_menu__link">Gallery</a></li>
+                      <li class="header_menu__item"><a href="#" class="header_menu__link">Price</a></li>
+                      <li class="header_menu__item"><a href="#" class="header_menu__link">Services</a></li>
+                      <li class="header_menu__item active"><a href="#" class="header_menu__link">Shedule</a></li>
+                      <li class="header_menu__item"><a href="#" class="header_menu__link">Contacts</a></li>
+                    </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="section-page block_categories">
+        <div class="section-container">
+          <h2 class="section_header">we work every day</h2>
+          <div class="block_categories__row">
+            <div class="block_categories__item">
+              <div class="block_categories__picture-wrap"><a href="#" class="block_categories__picture block_categories__picture_birds"></a><a href="#" class="block_categories__picture-hover block_categories__picture_birds-hover"></a></div>
+              <h3 class="block_categories__name"><a href="#">bad birds</a></h3>
+              <p class="block_categories__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.
+              </p>
+            </div>
+            <div class="block_categories__item">
+              <div class="block_categories__picture-wrap"><a href="#" class="block_categories__picture block_categories__picture_whales"></a><a href="#" class="block_categories__picture-hover block_categories__picture_whales-hover"></a></div>
+              <h3 class="block_categories__name"><a href="#">nice mammals</a></h3>
+              <p class="block_categories__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.
+              </p>
+            </div>
+            <div class="block_categories__item">
+              <div class="block_categories__picture-wrap"><a href="#" class="block_categories__picture block_categories__picture_reptiles"></a><a href="#" class="block_categories__picture-hover block_categories__picture_reptiles-hover"></a></div>
+              <h3 class="block_categories__name"><a href="#">funny reptiles</a></h3>
+              <p class="block_categories__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.
+              </p>
+            </div>
+          </div>
+          <div class="block_categories__row">
+            <div class="block_categories__item">
+              <div class="block_categories__picture-wrap"><a href="#" class="block_categories__picture block_categories__picture_insects"></a><a href="#" class="block_categories__picture-hover block_categories__picture_insects-hover"></a></div>
+              <h3 class="block_categories__name"><a href="#">fast insects</a></h3>
+              <p class="block_categories__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.
+              </p>
+            </div>
+            <div class="block_categories__item">
+              <div class="block_categories__picture-wrap"><a href="#" class="block_categories__picture block_categories__picture_great-animals"></a><a href="#" class="block_categories__picture-hover block_categories__picture_great-animals-hover"></a></div>
+              <h3 class="block_categories__name"><a href="#">Great animals</a></h3>
+              <p class="block_categories__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.
+              </p>
+            </div>
+            <div class="block_categories__item">
+              <div class="block_categories__picture-wrap"><a href="#" class="block_categories__picture block_categories__picture_clams"></a><a href="#" class="block_categories__picture-hover block_categories__picture_clams-hover"></a></div>
+              <h3 class="block_categories__name"><a href="#">suspicious clams</a></h3>
+              <p class="block_categories__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-page gallery-shark-wrap">
+        <div class="section-container">
+          <div class="gallery-sherk_block">
+            <div class="gallery-shark"></div>
+            <div class="gallery-shark__text item-centered">
+              <h2 class="section_header section_header_white section_header_text_centered">and very good shark</h2>
+              <button class="gallery-shark__btn">view gallery</button>
+            </div>
+          </div>
+        </div>
+        <div class="tf_gallery">
+          <div id="tf_loading" class="tf_loading"></div>
+          <div id="tf_bg" class="tf_bg"><img src="img/gallery-shark/1.jpg" alt="Image 1" longdesc="img/gallery-shark/thumbs/1.jpg"><img src="img/gallery-shark/12.jpg" alt="Image 2" longdesc="img/gallery-shark/thumbs/12.jpg"><img src="img/gallery-shark/11.jpg" alt="Image 3" longdesc="img/gallery-shark/thumbs/11.jpg"><img src="img/gallery-shark/7.jpg" alt="Image 4" longdesc="img/gallery-shark/thumbs/7.jpg"><img src="img/gallery-shark/9.jpg" alt="Image 5" longdesc="img/gallery-shark/thumbs/9.jpg"><img src="img/gallery-shark/10.jpg" alt="Image 6" longdesc="img/gallery-shark/thumbs/10.jpg">
+            <div class="tf_pattern"></div>
+          </div>
+          <div id="tf_content_wrapper" class="tf_content_wrapper">
+            <div class="tf_content">
+              <h2>Dreamer</h2>
+              <p>Far far away, behind the word mountains, ...</p>
+            </div>
+            <div class="tf_content">
+              <h2>Dreamer 2</h2>
+              <p>Far far away, behind the word mountains, ... 2</p>
+            </div>
+          </div>
+          <div id="tf_thumbs" class="tf_thumbs">
+            <div class="front"><img src="img/gallery-shark/thumbs/1.jpg" alt="Thumb1" class="tf_thumbs__img"></div>
+            <div class="back"><img src="img/gallery-shark    /thumbs/1.jpg" alt="Thumb1" class="tf_thumbs__img"></div>
+          </div>
+          <div id="tf_next" class="tf_next"></div>
+          <div id="tf_prev" class="tf_prev"></div>
+          <div class="gallery_close gallery_close_shark"></div>
+        </div>
+      </section>
+      <section class="section-page future_events">
+        <div class="section-container">
+          <h2 class="section_header">future events</h2>
+          <div class="future-events_period"><a href="#" class="future-events_period__item"><span class="future-events_period__item-text">This week</span></a><a href="#" class="future-events_period__item"><span class="future-events_period__item-text active">This month<span class="future-events_period__item-update">+2</span></span></a><a href="#" class="future-events_period__item"><span class="future-events_period__item-text">This year</span></a></div>
+          <div class="future-events_pagination"><a href="#" class="future-events_pagination__prev icon-left-dir"></a><span class="future-events_pagination__page-number">1</span><span class="future-events_pagination__total-pages">26</span><a href="#" class="future-events_pagination__next icon-right-dir"></a></div>
+          <div class="future-events_block">
+            <div class="future-events_block__row">
+              <div class="future-events_item">
+                <div class="future-events_item__picture-wrap"><img src="img/future-events/eventpost1.jpg" alt="" title="" class="future-events_item__picture">
+                  <div class="future-events_date">
+                    <div class="future-events_date__day">26</div>
+                    <div class="future-events_date__monthYear">feb, 2017</div>
+                  </div>
+                </div>
+                <div class="future-events_item__text">
+                  <div class="future-events_item__header">Lorem ipsum dolor sit amet</div>
+                  <p class="future-events_item__description">Consectetur adipisicing elit, sed do adipisicing elit sed do</p>
+                </div>
+              </div>
+              <div class="future-events_item">
+                <div class="future-events_item__picture-wrap"><img src="img/future-events/eventpost2.jpg" alt="" title="" class="future-events_item__picture">
+                  <div class="future-events_date">
+                    <div class="future-events_date__day">27</div>
+                    <div class="future-events_date__monthYear">feb, 2017</div>
+                  </div>
+                </div>
+                <div class="future-events_item__text">
+                  <div class="future-events_item__header">Lorem ipsum dolor sit amet</div>
+                  <p class="future-events_item__description">Consectetur adipisicing elit, sed do consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.</p>
+                </div>
+              </div>
+              <div class="future-events_item">
+                <div class="future-events_item__picture-wrap"><img src="img/future-events/eventpost3.jpg" alt="" title="" class="future-events_item__picture">
+                  <div class="future-events_date">
+                    <div class="future-events_date__day">1</div>
+                    <div class="future-events_date__monthYear">mar, 2017</div>
+                  </div>
+                </div>
+                <div class="future-events_item__text">
+                  <div class="future-events_item__header">Lorem ipsum dolor sit amet</div>
+                  <p class="future-events_item__description">Consectetur adipisicing elit, sed do consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="future-events_block__row">
+              <div class="future-events_item">
+                <div class="future-events_item__picture-wrap"><img src="img/future-events/eventpost4.jpg" alt="" title="" class="future-events_item__picture">
+                  <div class="future-events_date">
+                    <div class="future-events_date__day">2</div>
+                    <div class="future-events_date__monthYear">mar, 2017</div>
+                  </div>
+                </div>
+                <div class="future-events_item__text">
+                  <div class="future-events_item__header">Lorem ipsum dolor sit amet</div>
+                  <p class="future-events_item__description">Consectetur adipisicing elit, sed do consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.</p>
+                </div>
+              </div>
+              <div class="future-events_item">
+                <div class="future-events_item__picture-wrap"><img src="img/future-events/eventpost5.jpg" alt="" title="" class="future-events_item__picture">
+                  <div class="future-events_date">
+                    <div class="future-events_date__day">6</div>
+                    <div class="future-events_date__monthYear">mar, 2017</div>
+                  </div>
+                </div>
+                <div class="future-events_item__text">
+                  <div class="future-events_item__header">Lorem ipsum dolor sit amet</div>
+                  <p class="future-events_item__description">Consectetur adipisicing elit, sed do consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.</p>
+                </div>
+              </div>
+              <div class="future-events_item">
+                <div class="future-events_item__picture-wrap"><img src="img/future-events/eventpost6.jpg" alt="" title="" class="future-events_item__picture">
+                  <div class="future-events_date">
+                    <div class="future-events_date__day">10</div>
+                    <div class="future-events_date__monthYear">mar, 2017</div>
+                  </div>
+                </div>
+                <div class="future-events_item__text">
+                  <div class="future-events_item__header">Lorem ipsum dolor sit amet</div>
+                  <p class="future-events_item__description">Consectetur adipisicing elit, sed do consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pop-up-wrap">
+            <div class="pop-up">
+              <div class="pop-up_content">
+                <div class="pop-up__pic-holder"><img src="img/future-events/eventpost4.jpg" alt="" title="" class="pop-up__image"></div>
+                <div class="pop-up__text">
+                  <div class="pop-up__date">10 mar, 2017</div>
+                  <div class="pop-up__header">Lorem ipsum dolor sit amet</div>
+                  <p>Lorem ipsum dolor sit amet Consectetur adipisicing elit, sed do consequatur culpa deserunt dolore eius maiores neque omnis voluptatibus.</p>
+                </div>
+              </div><a href="#" class="close">✖</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-page todays-events">
+        <div class="section-container">
+          <h2 class="section_header">todays events</h2>
+          <div class="todays-events_block">
+            <div class="today-events_calendar-block">
+              <table class="today-events_calendar">
+                <thead class="today-events_calendar-nav">
+                  <tr>
+                    <td colspan="9">
+                      <div class="today-events_calendar-header-month"><a href="#" class="today-events_calendar-header-month__month-prev icon-left-dir"></a>
+                        <div class="today-events_calendar-header-month__current">
+                          <div class="today-events_calendar-header-month__current-month">August</div>
+                          <div class="today-events_calendar-header-month__current-year">2017</div>
+                          <div class="today-events_calendar-header-month__current-fulldate">today is<span class="today-events_calendar-header-month__current-fulldate today-events_calendar-header-month__current-fulldate_content">23 aug 2017</span></div>
+                        </div><a href="#" class="today-events_calendar-header-month__month-next icon-right-dir"></a>
+                      </div>
+                    </td>
+                  </tr>
+                </thead>
+                <thead class="today-events_calendar__header-daysofweek-wrap">
+                  <tr class="today-events_calendar__header-daysofweek">
+                    <th class="today-events_calendar__dayofweek">mon</th>
+                    <th class="today-events_calendar__dayofweek">tue</th>
+                    <th class="today-events_calendar__dayofweek">wed</th>
+                    <th class="today-events_calendar__dayofweek">thu</th>
+                    <th class="today-events_calendar__dayofweek">fri</th>
+                    <th class="today-events_calendar__dayofweek">sat</th>
+                    <th class="today-events_calendar__dayofweek">sun</th>
+                  </tr>
+                </thead>
+                <tbody class="today-events_calendar__body">
+                  <tr class="today-events_calendar__row">
+                    <td class="today-events_calendar__day today-events_calendar__day_othermonth">30</td>
+                    <td class="today-events_calendar__day today-events_calendar__day_othermonth">31</td>
+                    <td class="today-events_calendar__day">1</td>
+                    <td class="today-events_calendar__day">2</td>
+                    <td class="today-events_calendar__day">3</td>
+                    <td class="today-events_calendar__day">4</td>
+                    <td class="today-events_calendar__day">5</td>
+                  </tr>
+                  <tr class="today-events_calendar__row">
+                    <td class="today-events_calendar__day">6</td>
+                    <td class="today-events_calendar__day">7</td>
+                    <td class="today-events_calendar__day today-events_calendar__day_present">8</td>
+                    <td class="today-events_calendar__day">9</td>
+                    <td class="today-events_calendar__day">10</td>
+                    <td class="today-events_calendar__day">11</td>
+                    <td class="today-events_calendar__day">12</td>
+                  </tr>
+                  <tr class="today-events_calendar__row">
+                    <td class="today-events_calendar__day">13</td>
+                    <td class="today-events_calendar__day">14</td>
+                    <td class="today-events_calendar__day">15</td>
+                    <td class="today-events_calendar__day">16</td>
+                    <td class="today-events_calendar__day">17</td>
+                    <td class="today-events_calendar__day">18</td>
+                    <td class="today-events_calendar__day">19</td>
+                  </tr>
+                  <tr class="today-events_calendar__row">
+                    <td class="today-events_calendar__day">20</td>
+                    <td class="today-events_calendar__day">21</td>
+                    <td class="today-events_calendar__day">22</td>
+                    <td class="today-events_calendar__day today-events_calendar__day_future">23</td>
+                    <td class="today-events_calendar__day">24</td>
+                    <td class="today-events_calendar__day">25</td>
+                    <td class="today-events_calendar__day">26</td>
+                  </tr>
+                  <tr class="today-events_calendar__row">
+                    <td class="today-events_calendar__day">27</td>
+                    <td class="today-events_calendar__day">28</td>
+                    <td class="today-events_calendar__day">29</td>
+                    <td class="today-events_calendar__day">30</td>
+                    <td class="today-events_calendar__day">31</td>
+                    <td class="today-events_calendar__day today-events_calendar__day_othermonth">1</td>
+                    <td class="today-events_calendar__day today-events_calendar__day_othermonth">2</td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="today-events_prices">
+                <li class="today-events_prices__item">
+                  <div class="today-events_prices__item-name">Diving</div>
+                  <div class="today-events_prices__item-price">from<span class="today-events_prices__price-value">100$</span></div>
+                </li>
+                <li class="today-events_prices__item">
+                  <div class="today-events_prices__item-name">Photography</div>
+                  <div class="today-events_prices__item-price">from<span class="today-events_prices__price-value">30$</span></div>
+                </li>
+                <li class="today-events_prices__item">
+                  <div class="today-events_prices__item-name">VIP tours</div>
+                  <div class="today-events_prices__item-price">from<span class="today-events_prices__price-value">80$</span></div>
+                </li>
+                <li class="today-events_prices__item">
+                  <div class="today-events_prices__item-name">Celebration</div>
+                  <div class="today-events_prices__item-price">from<span class="today-events_prices__price-value">40$</span></div>
+                </li>
+              </ul>
+            </div>
+            <div class="today-events_events-block">
+              <div class="today-events_session">
+                <div class="today-events_session-start">
+                  <div class="today-events_session-clock">
+                    <div class="today-events_session-clock__arrow"></div>
+                  </div>
+                  <div class="today-events_session-header"><span class="today-events_session-header__time">12.00</span>start of the session</div>
+                </div>
+                <div class="today-events_session-content">
+                  <ul class="today-events_session-content-prices">
+                    <li class="today-events_session-content-prices__item">adult ticket -<span class="today-events_session-content-prices__value">20$</span></li>
+                    <li class="today-events_session-content-prices__item">child ticket -<span class="today-events_session-content-prices__value">10$</span></li>
+                  </ul>
+                  <p class="today-events_session-content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    .
+                  </p>
+                </div>
+              </div>
+              <div class="today-events_session">
+                <div class="today-events_session-start">
+                  <div class="today-events_session-clock">
+                    <div class="today-events_session-clock__arrow"></div>
+                  </div>
+                  <div class="today-events_session-header"><span class="today-events_session-header__time">15.30</span>start of the session</div>
+                </div>
+                <div class="today-events_session-content">
+                  <ul class="today-events_session-content-prices">
+                    <li class="today-events_session-content-prices__item">adult ticket -<span class="today-events_session-content-prices__value">20$</span></li>
+                    <li class="today-events_session-content-prices__item">child ticket -<span class="today-events_session-content-prices__value">10$</span></li>
+                  </ul>
+                  <p class="today-events_session-content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    .
+                  </p>
+                </div>
+              </div>
+              <div class="today-events_session">
+                <div class="today-events_session-start">
+                  <div class="today-events_session-clock">
+                    <div class="today-events_session-clock__arrow"></div>
+                  </div>
+                  <div class="today-events_session-header"><span class="today-events_session-header__time">18.00</span>start of the session</div>
+                </div>
+                <div class="today-events_session-content">
+                  <ul class="today-events_session-content-prices">
+                    <li class="today-events_session-content-prices__item">adult ticket -<span class="today-events_session-content-prices__value">20$</span></li>
+                    <li class="today-events_session-content-prices__item">child ticket -<span class="today-events_session-content-prices__value">10$</span></li>
+                  </ul>
+                  <p class="today-events_session-content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-page section-guides">
+        <div class="section-container">
+          <h2 class="section_header">Meet our guides</h2>
+          <p class="section-guides_text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          </p>
+          <div class="section-guides_block">
+            <div class="section-guides_block__row">
+              <div class="section-guides_item">
+                <div style="background-image: url(img/guid/guid1.jpg);" class="section-guides_item__picture"></div>
+                <div class="section-guides_info">
+                  <div class="section-guides_info__txt">
+                    <div class="section-guides_info__name">Anastasia Lakomaja</div>
+                    <div class="section-guides_info__activities">trainer</div>
+                  </div>
+                  <ul class="section-guides_socials">
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-facebook"></a>
+                    </li>
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-twitter"></a>
+                    </li>
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-gplus-1"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="section-guides_item">
+                <div style="background-image: url(img/guid/guid2.jpg);" class="section-guides_item__picture"></div>
+                <div class="section-guides_info">
+                  <div class="section-guides_info__txt">
+                    <div class="section-guides_info__name">James Calabrio</div>
+                    <div class="section-guides_info__activities">PhD</div>
+                  </div>
+                  <ul class="section-guides_socials">
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-facebook"></a>
+                    </li>
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-twitter"></a>
+                    </li>
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-gplus-1"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="section-guides_item">
+                <div style="background-image: url(img/guid/guid3.jpg);" class="section-guides_item__picture"></div>
+                <div class="section-guides_info">
+                  <div class="section-guides_info__txt">
+                    <div class="section-guides_info__name">Nicol Mira</div>
+                    <div class="section-guides_info__activities">trainer</div>
+                  </div>
+                  <ul class="section-guides_socials">
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-facebook"></a>
+                    </li>
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-twitter"></a>
+                    </li>
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-gplus-1"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="section-guides_item">
+                <div style="background-image: url(img/guid/guid4.jpg);" class="section-guides_item__picture"></div>
+                <div class="section-guides_info">
+                  <div class="section-guides_info__txt">
+                    <div class="section-guides_info__name">Vanessa Delphino</div>
+                    <div class="section-guides_info__activities">trainer</div>
+                  </div>
+                  <ul class="section-guides_socials">
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-facebook"></a>
+                    </li>
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-twitter"></a>
+                    </li>
+                    <li class="section-guides_socials__items"><a href="#" class="section-guides_socials__items-icon icon-gplus-1"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-page contacts">
+        <div class="section-container">
+          <h2 class="section_header">Contact us</h2>
+          <p class="section-guides_text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="section-contacts_block">
+            <form action="" method="post" name="form" class="contacts_form">
+              <input type="text" name="name" placeholder="Name" class="contacts_form__name">
+              <input type="email" name="mail" placeholder="Email" class="contacts_form__mail">
+              <textarea placeholder="Message" name="message" class="contacts_form__message"></textarea>
+              <button type="submit" class="contacts_form__btn">Contact</button>
+            </form>
+            <div class="contacts_info">
+              <div class="contacts_info__phone">
+                <h3 class="contacts_info__header">Telephone</h3>
+                <p class="contacts_info__txt">
+                  +08 (123) 234 567 <br>
+                  +08 (321) 123 876
+                </p>
+              </div>
+              <div class="contacts_info__adress">
+                <h3 class="contacts_info__header">Adress</h3>
+                <ul class="contacts_info__adress-list">
+                  <li class="contacts_info__adress-item">Golden Beach florencia  north frlicjita lorem</li>
+                </ul>
+              </div>
+              <div class="contacts_info__socials">
+                <ul class="contacts_socials-list">
+                  <li class="contacts_socials-list__items"><a href="#" class="contacts_socials-list__items-icon contacts_socials-list__items-icon_twitter icon-twitter"></a>
+                  </li>
+                  <li class="contacts_socials-list__items"><a href="#" class="contacts_socials-list__items-icon contacts_socials-list__items-icon_facebook icon-facebook"></a>
+                  </li>
+                  <li class="contacts_socials-list__items"><a href="#" class="contacts_socials-list__items-icon contacts_socials-list__items-icon_google icon-google"></a>
+                  </li>
+                  <li class="contacts_socials-list__items"><a href="#" class="contacts_socials-list__items-icon contacts_socials-list__items-icon_skype-1 icon-skype-1"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="gallery">
+          <div class="gallery_inner">
+            <div class="gallery_item"><a href="#" class="gallery_item__pic-wrapper"><img src="img/gallery/gallery1.jpg" alt="" title="" class="gallery_item__picture">
+                <div class="gallery_item__hover">
+                  <div class="gallery_item__hover-text item-centered">view</div>
+                </div></a></div>
+            <div class="gallery_item"><a href="#" class="gallery_item__pic-wrapper"><img src="img/gallery/gallery2.jpg" alt="" title="" class="gallery_item__picture">
+                <div class="gallery_item__hover">
+                  <div class="gallery_item__hover-text item-centered">view</div>
+                </div></a></div>
+            <div class="gallery_item"><a href="#" class="gallery_item__pic-wrapper"><img src="img/gallery/gallery3.jpg" alt="" title="" class="gallery_item__picture">
+                <div class="gallery_item__hover">
+                  <div class="gallery_item__hover-text item-centered">view</div>
+                </div></a></div>
+            <div class="gallery_item"><a href="#" class="gallery_item__pic-wrapper"><img src="img/gallery/gallery4.jpg" alt="" title="" class="gallery_item__picture">
+                <div class="gallery_item__hover">
+                  <div class="gallery_item__hover-text item-centered">view</div>
+                </div></a></div>
+            <div class="gallery_item"><a href="#" class="gallery_item__pic-wrapper"><img src="img/gallery/gallery5.jpg" alt="" title="" class="gallery_item__picture">
+                <div class="gallery_item__hover">
+                  <div class="gallery_item__hover-text item-centered">view</div>
+                </div></a></div>
+            <div class="gallery_item"><a href="#" class="gallery_item__pic-wrapper"><img src="img/gallery/gallery6.jpg" alt="" title="" class="gallery_item__picture">
+                <div class="gallery_item__hover">
+                  <div class="gallery_item__hover-text item-centered">view</div>
+                </div></a></div>
+            <div class="gallery_item"><a href="#" class="gallery_item__pic-wrapper"><img src="img/gallery/gallery7.jpg" alt="" title="" class="gallery_item__picture">
+                <div class="gallery_item__hover">
+                  <div class="gallery_item__hover-text item-centered">view</div>
+                </div></a></div>
+            <div class="gallery_item"><a href="#" class="gallery_item__pic-wrapper"><img src="img/gallery/gallery8.jpg" alt="" title="" class="gallery_item__picture">
+                <div class="gallery_item__hover">
+                  <div class="gallery_item__hover-text item-centered">view</div>
+                </div></a></div>
+          </div>
+          <div class="gallery_fotorama-block">
+            <div data-auto="false" class="fotorama"><a href="img/gallery/gallery8.jpg"><img src="img/gallery/gallery8.jpg" alt="" title=""></a><a href="img/gallery/gallery7.jpg"><img src="img/gallery/gallery7.jpg" alt="" title=""></a><a href="img/gallery/gallery6.jpg"><img src="img/gallery/gallery6.jpg" alt="" title=""></a><a href="img/gallery/gallery5.jpg"><img src="img/gallery/gallery5.jpg" alt="" title=""></a></div>
+            <div class="gallery_close gallery_close_bottom"></div>
+          </div>
+        </div>
+        <footer class="footer">© 2013-2017 Dalechuk Inna, Inc. All rights reserved</footer>
+      </section>
+    </div>
     <!--bower:js-->
     <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/tooltipster/dist/js/tooltipster.bundle.js"></script>
-    <script src="bower_components/pannellum/js/libpannellum.js"></script>
-    <script src="bower_components/pannellum/js/RequestAnimationFrame.js"></script>
-    <script src="bower_components/pannellum/js/pannellum.js"></script>
+    <script src="bower_components/modernizr/modernizr-custom.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/flip/dist/jquery.flip.js"></script>
     <!--endbower-->
+    <!--build:js scripts/vendor.js--><script src="js/idangerous.chopslider-3.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ripples.js"></script>
+    <script type="text/javascript" src="js/fotorama.js"></script>
+    <!--script(type="text/javascript" src="js/jquery.flip.js")-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
     <!--endbuild-->
     <!--build:js js/main.js-->
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;load=package.full"></script>
     <script src="js/main.js"></script>
     <script src="js/plugins.js"></script>
-    <!--endbuild-->
+    <!--endbuild--><!-- HelloPreload http://hello-site.ru/preloader/ -->
+    <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #19B5FE url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;background-size:171px;}</style>
+    <div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+    <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+    <!-- HelloPreload http://hello-site.ru/preloader/ -->
   </body>
 </html>
