@@ -1,8 +1,0 @@
-/.idea
-node_modules/
-jade/
-scss/
-smartgrid.js
-config.rb
-.sass-cache/
-bower_components/modernizr/
